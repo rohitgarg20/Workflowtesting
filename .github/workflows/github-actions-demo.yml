@@ -1,6 +1,6 @@
 name: Run test when push
 on: pull_request
-  types: [labeled]
+  types: [labelled]
 jobs:
   downloadRepostitroy:
     runs-on: ubuntu-latest
