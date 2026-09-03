@@ -10,14 +10,5 @@ jobs:
         uses: actions/setup-node@v7
       - name: install dependencies
         run: npm ci
-      - name: check files
-        run: |
-          pwd 
-          find . -name package.json -type f
-
-  runTest:
-    runs-on: ubuntu-latest
-    needs: downloadRepostitroy
-    steps:
       - name: Running test cases
-        run: npm test      
+        run: npm test   
