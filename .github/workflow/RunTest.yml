@@ -1,0 +1,12 @@
+name: Run test when push
+on: workflow_dispatch
+jobs:
+  downloadRepostitroy:
+  runs-on: ubuntu_latest
+  steps:
+      - name: download github repositroy
+      uses: actions/checkout@v7
+      - name: set up node servier
+      uses: actions/setup-node@v7
+     - name: install dependencies
+      run: npm ci
