@@ -14,6 +14,7 @@ jobs:
         run: |
           pwd 
           ls -la
+          find . -name package.json -type f
 
   runTest:
     runs-on: ubuntu-latest
