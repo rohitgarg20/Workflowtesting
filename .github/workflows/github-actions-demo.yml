@@ -5,7 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: if label is good to merge
-        if: toJSON(github.event.action) == good to merge
+        if: github.event.label.name == good to merge
+        run: echo "good to merge label found"
       - name: download github repositroy
         uses: actions/checkout@v7
       - name: set up node servier
