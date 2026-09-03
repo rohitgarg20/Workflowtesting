@@ -13,7 +13,6 @@ jobs:
       - name: check files
         run: |
           pwd 
-          ls -la
           find . -name package.json -type f
 
   runTest:
