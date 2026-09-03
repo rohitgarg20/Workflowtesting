@@ -4,8 +4,8 @@ jobs:
   downloadRepostitroy:
     runs-on: ubuntu-latest
     steps:
-      # - name: if label is good to merge
-      #   run: echo ${github.event}
+      - name: if label is good to merge
+        run: echo ${github.event}
       - name: download github repositroy
         uses: actions/checkout@v7
       - name: set up node servier
