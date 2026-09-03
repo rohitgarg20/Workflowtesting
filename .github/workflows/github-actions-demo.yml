@@ -1,9 +1,11 @@
 name: Run test when push
-on: push
+on: [pull_request, workflow_dispatch]
 jobs:
   downloadRepostitroy:
     runs-on: ubuntu-latest
     steps:
+      - name: if label is good to merge
+        run: echo ${github.event}
       - name: download github repositroy
         uses: actions/checkout@v7
       - name: set up node servier
@@ -11,4 +13,4 @@ jobs:
       - name: install dependencies
         run: npm ci
       - name: Running test cases
-        run: npm test   
+        run: npm test
