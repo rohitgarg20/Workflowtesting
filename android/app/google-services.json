@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "633014581816",
+    "project_id": "pushnotification-bd446",
+    "storage_bucket": "pushnotification-bd446.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633014581816:android:18c0dd871142f6acf144cd",
+        "android_client_info": {
+          "package_name": "com.countdown"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWdaQ90cwKIhkpGatFGPAgD9f8Q28rLpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
