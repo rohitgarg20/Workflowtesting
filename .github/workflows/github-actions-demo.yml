@@ -1,11 +1,11 @@
 name: Run test when push
-on: [push, pull_request, workflow_dispatch]
+on: pull_request
 jobs:
   downloadRepostitroy:
     runs-on: ubuntu-latest
     steps:
       - name: if label is good to merge
-        run: echo '${{toJSON(github.event)}}'
+        if: toJSON(github.event.action) == good to merge
       - name: download github repositroy
         uses: actions/checkout@v7
       - name: set up node servier
