@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: if label is good to merge
         # if: github.event.label.name == good to merge
-        run: echo '${{toJSON(github.event.label.name)}}'
+        run: echo '${{toJSON(github.event.labels)}}'
       - name: download github repositroy
         uses: actions/checkout@v7
       - name: set up node servier
