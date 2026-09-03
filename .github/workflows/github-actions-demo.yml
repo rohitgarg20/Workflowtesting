@@ -1,5 +1,5 @@
 name: Run test when push
-on: workflow_dispatch
+on: push
 jobs:
   downloadRepostitroy:
     runs-on: ubuntu-latest
