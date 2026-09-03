@@ -16,5 +16,5 @@ jobs:
     needs: downloadRepostitroy
     steps:
       - name: Running test cases
-        working-directory: ./
+        working-directory: ./../
         run: npm test      
