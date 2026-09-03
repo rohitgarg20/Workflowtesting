@@ -13,6 +13,7 @@ jobs:
 
   runTest:
     runs-on: ubuntu-latest
+    needs: downloadRepostitroy
     steps:
       - name: Running test cases
         run: npm test      
