@@ -2,7 +2,7 @@ name: Run test when push
 on: workflow_dispatch
 jobs:
   downloadRepostitroy:
-  runs-on: ubuntu_latest
+  runs-on: ubuntu-latest
   steps:
       - name: download github repositroy
       uses: actions/checkout@v7
