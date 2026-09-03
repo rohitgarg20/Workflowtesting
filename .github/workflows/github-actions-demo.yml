@@ -10,3 +10,9 @@ jobs:
         uses: actions/setup-node@v7
       - name: install dependencies
         run: npm ci
+
+  runTest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Running test cases
+        run: npm test      
