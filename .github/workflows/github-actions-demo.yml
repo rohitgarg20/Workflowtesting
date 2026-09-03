@@ -12,7 +12,8 @@ jobs:
         run: npm ci
       - name: check files
         run: |
-          pwd -la
+          pwd 
+          ls -la
 
   runTest:
     runs-on: ubuntu-latest
