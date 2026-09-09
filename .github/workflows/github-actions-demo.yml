@@ -37,7 +37,7 @@ jobs:
           cache: 'gradle'
       - name: decode keystore
         run: |
-          echo "${{ secrets.SIGNING_KEY }}" | base64 --decode > app/release.jks
+          echo "${{ secrets.SIGNING_KEY }}" | base64 --decode > android/app/release.jks
       - name: build release apk
         env: 
           KEYSTORE_FILE: release.jks
